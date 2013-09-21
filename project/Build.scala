@@ -48,7 +48,7 @@ object SlickBuild extends Build {
     organizationName := "Typesafe",
     organization := "com.typesafe.slick",
     autoCompilerPlugins := true,
-    libraryDependencies += compilerPlugin("test.org" %% "printplugin" % "1.0"),
+    libraryDependencies += compilerPlugin("org.scala-lang.plugins" %% "printplugin" % "0.2.0"),
     scalacOptions += "-P:printplugin:oversrc",
     resolvers += Resolver.sonatypeRepo("snapshots"),
     scalacOptions ++= List("-deprecation", "-feature"),
